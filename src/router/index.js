@@ -25,4 +25,9 @@ const router = new VueRouter({
   routes
 });
 
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || "發現中小企";
+  next();
+});
+
 export default router;

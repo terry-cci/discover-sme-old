@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary" dark dense>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -28,25 +28,25 @@
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <!-- <span class="mr-2">Latest Release</span> -->
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+// import HelloWorld from "./components/HelloWorld";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld
+    // HelloWorld
   },
 
   data: () => ({

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark height="40" collapse-on-scroll>
+    <v-app-bar app color="primary" dark height="45" fixed>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -23,11 +23,11 @@
       </v-btn> -->
     </v-app-bar>
 
-    <v-main>
+    <v-main class="secondary">
       <router-view />
     </v-main>
 
-    <v-footer app dense height="30">
+    <v-footer app dark dense height="23" color="#91998C" class="py-0">
       <v-spacer></v-spacer>
       <small>&copy; TerryCCI, {{ new Date().getFullYear() }}</small>
     </v-footer>

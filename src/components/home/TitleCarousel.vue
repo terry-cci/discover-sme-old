@@ -3,9 +3,8 @@
     cycle
     hide-delimiters
     touchless
-    interval="4000"
     :show-arrows="false"
-    height="max(55vh, 325px)"
+    height="max(60vh, 325px)"
   >
     <v-carousel-item
       v-for="photo in photos"
@@ -13,7 +12,7 @@
       :src="photo.src"
     />
     <!-- overlay -->
-    <v-overlay absolute opacity="0.9" z-index="0">
+    <v-overlay absolute opacity="0.85" z-index="0">
       <div class="d-flex flex-column align-center pa-5">
         <h1>發現中小企!</h1>
         <span class="subtitle-1">穿梭於橫街窄巷間, 探索各式的店鋪!</span>
@@ -56,6 +55,6 @@ export default {
 
 <style lang="scss" scoped>
 .v-overlay {
-  font-size: min(calc(95vw / 20), 6vh);
+  font-size: min(calc(95vw / 20), 5vh);
 }
 </style>

@@ -1,8 +1,5 @@
 <template>
   <v-container fluid class="pa-0">
-    <!-- <div class="d-flex flex-column h-100"> -->
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <v-row no-gutters>
       <v-col cols="12">
         <TitleCarousel />
@@ -13,7 +10,6 @@
         <TopSmeList />
       </v-col>
       <v-col cols="12">
-        <!-- <div class="secondary flex-grow-1"> -->
         <v-card class="ma-1 info" dark>
           <v-card-title>中小企業?</v-card-title>
 
@@ -34,16 +30,12 @@
             </v-btn>
           </v-card-actions>
         </v-card>
-        <!-- </div> -->
       </v-col>
     </v-row>
-    <!-- </div> -->
   </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld";
 import TitleCarousel from "@/components/home/TitleCarousel";
 import TopSmeList from "@/components/home/TopSmeList";
 

@@ -23,9 +23,17 @@
       </v-list>
     </v-card-text>
 
-    <v-card-actions>
+    <v-card-actions class="mt-2">
       <v-btn class="mx-auto accent">查看中小企目錄</v-btn>
+      <v-spacer />
     </v-card-actions>
+
+    <v-img
+      src="@/assets/buildings_without_cloud.png"
+      id="decoration"
+      width="min(55vw, 85vh)"
+      transition="slide-y-reverse-transition"
+    />
   </v-card>
 </template>
 
@@ -54,10 +62,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-list {
+  border: dashed var(--v-accent-base);
+}
+
 .hot-tag {
   position: absolute;
-  top: 0;
-  right: 1em;
+  top: -3px;
+  left: 1em;
 
   background-color: red;
   color: white;
@@ -69,5 +81,12 @@ export default {
   border-radius: inherit;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
+}
+
+#decoration {
+  position: absolute;
+
+  right: -0%;
+  bottom: -6px;
 }
 </style>

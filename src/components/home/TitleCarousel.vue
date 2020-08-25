@@ -21,7 +21,7 @@
         <v-divider dark class="w-100 my-6" />
         <small>找到了有趣的中小企?</small>
         <v-btn color="primary" class="mt-2" transition="scale-transition"
-          >上傳資料</v-btn
+          >拍照分享</v-btn
         >
       </div>
     </v-overlay>

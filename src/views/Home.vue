@@ -28,7 +28,10 @@
 
           <v-card-actions>
             <v-spacer />
-            <v-btn text outlined>了解更多 >></v-btn>
+            <v-btn text outlined>
+              了解更多
+              <v-icon right dark>mdi-information-outline</v-icon>
+            </v-btn>
           </v-card-actions>
         </v-card>
         <!-- </div> -->

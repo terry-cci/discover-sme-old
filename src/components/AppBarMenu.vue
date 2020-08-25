@@ -71,8 +71,8 @@ export default {
       opacity: 0.65;
 
       position: absolute;
-      top: calc(50% - 0.5em + 24px / 2 - 3px);
-      // the icon is fixed at 24px, -3px for adjusting
+      top: calc(50% - 0.5em + 24px / 2);
+      // the icon is fixed at 24px
     }
 
     .v-icon {

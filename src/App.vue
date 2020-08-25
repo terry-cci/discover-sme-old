@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark height="45" fixed>
+    <v-app-bar app color="primary" dark height="45" fixed hide-on-scroll>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"

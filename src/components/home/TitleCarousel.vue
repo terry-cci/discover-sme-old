@@ -5,7 +5,7 @@
     touchless
     interval="4000"
     :show-arrows="false"
-    height="max(55vh,250px)"
+    height="max(55vh, 325px)"
   >
     <v-carousel-item
       v-for="photo in photos"
@@ -16,7 +16,7 @@
     <v-overlay absolute opacity="0.9" z-index="0">
       <div class="d-flex flex-column align-center pa-5">
         <h1>發現中小企!</h1>
-        <span class="subtitle-2">穿梭於橫街窄巷間, 探索各式的店鋪!</span>
+        <span class="subtitle-1">穿梭於橫街窄巷間, 探索各式的店鋪!</span>
         <!-- - - - - - - - - - - - - - - - - - - - - - -->
         <v-divider dark class="w-100 my-6" />
         <small>找到了有趣的中小企?</small>
@@ -53,3 +53,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.v-overlay {
+  font-size: min(calc(95vw / 20), 6vh);
+}
+</style>

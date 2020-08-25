@@ -1,5 +1,7 @@
 <template>
-  <v-card class="ma-1">
+  <v-card class="ma-1" elevation="5">
+    <div class="hot-tag">HOT!</div>
+
     <v-card-title class="justify-center">熱門中小企</v-card-title>
 
     <v-card-text>
@@ -18,6 +20,10 @@
         </template>
       </v-list>
     </v-card-text>
+
+    <v-card-actions>
+      <v-btn class="mx-auto accent">查看中小企目錄</v-btn>
+    </v-card-actions>
   </v-card>
 </template>
 
@@ -39,3 +45,22 @@ export default {
   })
 };
 </script>
+
+<style lang="scss" scoped>
+.hot-tag {
+  position: absolute;
+  top: 0;
+  right: 1em;
+
+  background-color: red;
+  color: white;
+
+  min-width: 4em;
+  text-align: center;
+  font-weight: bold;
+
+  border-radius: inherit;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+</style>

@@ -43,9 +43,9 @@
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-import TitleCarousel from "@/components/home/TitleCarousel.vue";
-import TopSmeList from "@/components/home/TopSmeList.vue";
+// import HelloWorld from "@/components/HelloWorld";
+import TitleCarousel from "@/components/home/TitleCarousel";
+import TopSmeList from "@/components/home/TopSmeList";
 
 export default {
   name: "Home",

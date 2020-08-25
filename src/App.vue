@@ -1,33 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark height="45" fixed hide-on-scroll>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="http://via.placeholder.com/100"
-          transition="scale-transition"
-          width="30"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <!-- <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn> -->
-    </v-app-bar>
+    <AppBarMenu />
 
     <v-main class="secondary">
       <router-view />
     </v-main>
 
-    <v-footer app dark dense height="23" color="#91998C" class="py-0">
+    <v-footer app dark dense height="23" color="#91998C" class="py-0" absolute>
       <v-spacer></v-spacer>
       <small>&copy; TerryCCI, {{ new Date().getFullYear() }}</small>
     </v-footer>
@@ -35,13 +14,13 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld";
+import AppBarMenu from "@/components/AppBarMenu";
 
 export default {
   name: "App",
 
   components: {
-    // HelloWorld
+    AppBarMenu
   },
 
   data: () => ({
